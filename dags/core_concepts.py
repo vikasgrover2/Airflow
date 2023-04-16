@@ -27,7 +27,7 @@ with DAG(dag_id = 'Core_concepts',
         print(random())
 
     python_task = PythonOperator(
-        task_id="python_function", python_callable=print_random_number, op_args=[1],
+        task_id="python_function", python_callable=print_random_number, op_args=[1]
     )
 
 bash_task >> python_task
