@@ -29,5 +29,5 @@ with DAG(dag_id = 'Core_concepts',
     python_task = PythonOperator(
         task_id="python_function", python_callable=print_random_number, op_args=[1]
     )
-
+see
 bash_task >> python_task
